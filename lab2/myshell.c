@@ -1,9 +1,9 @@
 /*
  * MyShell Project for SOFE 3950U / CSCI 3020U: Operating Systems
  *
- * Copyright (C) 2017, <GROUP MEMBERS>
+ * Copyright (C) 2017, <Aaron Spindler>
  * All rights reserved.
- * 
+ *
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
         }
 
         // other commands here...
-        
+
         // quit command -- exit the shell
         else if (strcmp(command, "quit") == 0)
         {
