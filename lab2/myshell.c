@@ -34,6 +34,18 @@ int main(int argc, char *argv[])
     while (fgets(buffer, BUFFER_LEN, stdin) != NULL)
     {
         // Perform string tokenization to get the command and argument
+        int i = 0;
+        char temp = strtok(buffer, " ");
+        while(temp != NULL) {
+            if(i == 0){
+                strcpy(command, temp);
+                i++;
+            }else{
+                strcpy(arg, temp);
+                i++;
+            }
+          temp = strtok(NULL, " ");
+        }
 
         // Check the command and execute the operations for each command
         // cd command -- change the current directory
